@@ -1,0 +1,8 @@
+.select {
+    font: inherit;
+    appearance: none;
+    padding: .5rem 1rem ;
+    border-radius: 0;
+    border: 2px solid rgb(54, 210, 241);
+    background: rgb(197, 234, 242);
+}
