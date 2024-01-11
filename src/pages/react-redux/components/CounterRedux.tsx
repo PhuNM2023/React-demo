@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
-import { CounterState, RootState } from "../types/model";
+import { RootState } from "../types/model";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { increaseCountA, increaseCountB } from "../actions/counter.action";

@@ -36,6 +36,7 @@ import { Typography } from '@mui/material';
 import { userStore } from './pages/react-mobx/store/user.store';
 import { observer } from 'mobx-react';
 import ReduxComponent from './pages/react-redux/components/ReduxComponent';
+import ReactBootstrap from './pages/react-bootstrap/ReactBootstrap';
 
 const NotFound = () => {
   return <h2>404 - happy hacker</h2>
@@ -200,6 +201,7 @@ const App = observer(() => {
     {path:"use-context", element: <UseContext/>},
     {path:"react-mobx", element: <MobxComponent/>},
     {path:"react-redux", element: <ReduxComponent/>},
+    {path:"react-bootstrap", element: <ReactBootstrap/>},
   ]
 
   const navLinks = [
@@ -218,6 +220,7 @@ const App = observer(() => {
     { path: "use-context", title: "User context"},
     { path: "react-mobx", title: `React MobX - ${userStore.userId}`},
     { path: "react-redux", title: "React Redux"},
+    { path: "react-bootstrap", title: "React bootstrap"},
 
   ]
 

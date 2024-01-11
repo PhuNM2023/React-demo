@@ -31,5 +31,6 @@ export interface AddressProps {
 
 export interface RootState {
   counterReducer: CounterState;
-  academyReducer: AcademyState
+  academyReducer: AcademyState;
+  user: any
 }
