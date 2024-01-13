@@ -37,6 +37,11 @@ import { userStore } from './pages/react-mobx/store/user.store';
 import { observer } from 'mobx-react';
 import ReduxComponent from './pages/react-redux/components/ReduxComponent';
 import ReactBootstrap from './pages/react-bootstrap/ReactBootstrap';
+import RecipeBooks from './pages/react-bootstrap/RecipeBooks';
+import ReactWithFormik from './pages/comment-recipes/WithFormik';
+import AppHOC from './pages/comment-recipes/APpHOC';
+import RenderProps from './pages/comment-recipes/RenderProps';
+import SmartLoginComponent from './pages/comment-recipes/SmartDumbTopic';
 
 const NotFound = () => {
   return <h2>404 - happy hacker</h2>
@@ -202,6 +207,11 @@ const App = observer(() => {
     {path:"react-mobx", element: <MobxComponent/>},
     {path:"react-redux", element: <ReduxComponent/>},
     {path:"react-bootstrap", element: <ReactBootstrap/>},
+    {path:"recipe-book", element: <RecipeBooks/>},
+    {path:"react-withFormik", element: <ReactWithFormik/>},
+    {path:"app-hoc", element: <AppHOC/>},
+    {path:"render-props", element: <RenderProps/>},
+    {path:"smart-dump-container", element: <SmartLoginComponent/>},
   ]
 
   const navLinks = [
@@ -221,6 +231,11 @@ const App = observer(() => {
     { path: "react-mobx", title: `React MobX - ${userStore.userId}`},
     { path: "react-redux", title: "React Redux"},
     { path: "react-bootstrap", title: "React bootstrap"},
+    { path: "recipe-book", title: "Recipe Book"},
+    { path: "react-withFormik", title: "With Formik"},
+    { path: "app-hoc", title: "App HOC"},
+    { path: "render-props", title: "Render Props"},
+    { path: "smart-dump-container", title: "Smart Dump"},
 
   ]
 
