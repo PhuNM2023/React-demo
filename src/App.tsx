@@ -42,6 +42,12 @@ import ReactWithFormik from './pages/comment-recipes/WithFormik';
 import AppHOC from './pages/comment-recipes/APpHOC';
 import RenderProps from './pages/comment-recipes/RenderProps';
 import SmartLoginComponent from './pages/comment-recipes/SmartDumbTopic';
+import ReactContextClass from './pages/advance-hook/ContextClass';
+import "./pages/App.module.css"
+import UseRef from './pages/advance-hook/useRef';
+import UseMemoHook from './pages/advance-hook/useMemoHook';
+import UseCallBack from './pages/advance-hook/useCallBack';
+import UseLayoutEffect from './pages/advance-hook/UseLayoutEffect';
 
 const NotFound = () => {
   return <h2>404 - happy hacker</h2>
@@ -212,6 +218,11 @@ const App = observer(() => {
     {path:"app-hoc", element: <AppHOC/>},
     {path:"render-props", element: <RenderProps/>},
     {path:"smart-dump-container", element: <SmartLoginComponent/>},
+    {path:"react-context-class", element: <ReactContextClass/>},
+    {path:"use-ref", element: <UseRef/>},
+    {path:"use-memo-hook", element: <UseMemoHook/>},
+    {path:"use-callback", element: <UseCallBack/>},
+    {path:"use-layout-effect", element: <UseLayoutEffect/>},
   ]
 
   const navLinks = [
@@ -236,6 +247,11 @@ const App = observer(() => {
     { path: "app-hoc", title: "App HOC"},
     { path: "render-props", title: "Render Props"},
     { path: "smart-dump-container", title: "Smart Dump"},
+    { path: "react-context-class", title: "React context Class"},
+    { path: "use-ref", title: "Use Ref"},
+    { path: "use-memo-hook", title: "Use Memo hook"},
+    { path: "use-callback", title: "Use Callback"},
+    { path: "use-layout-effect", title: "Use layout Effect"},
 
   ]
 

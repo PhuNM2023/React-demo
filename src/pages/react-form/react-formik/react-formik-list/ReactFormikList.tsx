@@ -81,7 +81,7 @@ const ReactFormikList = () => {
         {({ values }) => (
           <Form>
             <FieldArray name="friends">
-              {({  remove, push }) => (
+              {({ remove, push }) => (
                 <div>
                   {values.friends.length > 0 &&
                     values.friends.map((friend, index) => (
